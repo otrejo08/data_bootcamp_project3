@@ -1,117 +1,136 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
-        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Bowlby+One+SC|Bungee+Inline|Caveat+Brush|Cutive+Mono|Faster+One|Flamenco|Gugi|Josefin+Sans|Life+Savers|PT+Sans+Narrow|Playfair+Display|Poiret+One|Raleway|Slabo+27px|Stardos+Stencil|Vast+Shadow" rel="stylesheet">
-        
-      </head>
-<style>
-body { margin:0; 
-padding:0;
-font-family: 'Slabo 27px', serif;
-background-image: url("background/board-background.jpg");
-background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
 
-
-.bg{/*not used*/
-  /* The image used */
-  background-image: url("marble.jpg");
-  /* Full height */
-  height: auto; 
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
   
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(8px);
-  opacity: 0.3;
-  top:0;
-}
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+  <link href="./assets/favicon.ico" rel="icon">
+
+  <link href="" rel="stylesheet">
 
 
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Gugi', cursive;
-font-family: 'Slabo 27px', serif;
-font-family: 'Playfair Display', serif;
-font-family: 'PT Sans Narrow', sans-serif;
-font-family: 'Josefin Sans', sans-serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Bowlby One SC', cursive;
-font-family: 'Anonymous Pro', monospace;
-font-family: 'Cutive Mono', monospace;
-font-family: 'Bungee Inline', cursive;
-font-family: 'Vast Shadow', cursive;
-font-family: 'Faster One', cursive;
-font-family: 'Stardos Stencil', cursive;
-font-family: 'Flamenco', cursive;
-font-family: 'Life Savers', cursive;
-font-family: 'Caveat Brush', cursive;
+  <title>AirBNB: Sydney & Melbourne</title>
 
-*/
+<link href="./main.550dcf66.css" rel="stylesheet"></head>
 
-
-</style>
-
-<body>
- 
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="logo/large_phraseable.png">Phrasable</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Visualizations
+<body> <!-- Add your content of header -->
+<header>
+  <nav class="navbar navbar-default active">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="logo/large_phraseable.png">Phrasable</a>
+          AirBNB: Melboure & Sydney
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="visualizations/Map.html">Map</a>
-          <a class="dropdown-item" href="visualizations/PricingStats.html">Pricing Statistics</a>
-          <a class="dropdown-item" href="#">Calendar</a>
-          <a class="dropdown-item" href="#">Word Map</a>
-          <a class="dropdown-item" href="#">City</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Melbourne</a>
-          <a class="dropdown-item" href="#">Sydney</a>
->>>>>>> f9bcd50496ee35b787c03f4d18ca691063c8a355
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="./index.html" title="">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Visualizations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="visualizations.html">Map</a>
+              <a class="dropdown-item" href="visualizations/PricingStats.html">Pricing Statistics</a>
+              <a class="dropdown-item" href="#">Calendar</a>
+              <a class="dropdown-item" href="#">Word Map</a>
+              <a class="dropdown-item" href="#">City</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Melbourne</a>
+              <a class="dropdown-item" href="#">Sydney</a>
+    >>>>>>> f9bcd50496ee35b787c03f4d18ca691063c8a355
+            </div>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+</header>
+
+<!-- Add your site or app content here -->
+  <div class="hero-full-container background-image-container white-text-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>AirBNB: Sydney & Melboure</h1>
+          <p>Raphael Vasquez, Molly Eskelson, Kabrina Ramnath, Omar Trejo</p>
+          <br>
         </div>
-
-        
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
-</nav> 
-<br>
-<br>
 
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus at sem quis varius. 
+            <br>
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus iaculis magna sagittis elit sagittis, at hendrerit lorem venenatis. Morbi accumsan iaculis blandit. Cras ultrices hendrerit nisl.</p>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
 
+  
 
+  
+       
 
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navbarFixedTopAnimation();
+  });
+</script>
 
+<footer class="footer-container white-text-container">
+  <div class="container">
+    <div class="row">
+        
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+    scrollRevelation('.reveal');
+  });
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--> <script type="text/javascript" src="./main.0cf8b554.js"></script></body>
 
 </html>
