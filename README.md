@@ -66,6 +66,8 @@ The following results are showed in the notebooks:
 -
 -
 
+## What could be improved<a name="limitations"></a>
+- POS tag filter is more about the context of the features than frequencies of features. Topic Modelling tries to map out the recurring patterns of terms into topics. However, every term might not be equally important contextually. For example, POS tag IN contain terms such as – “within”, “upon”, “except”. “CD” contains – “one”,”two”, “hundred” etc. “MD” contains “may”, “must” etc. These terms are the supporting words of a language and can be removed by studying their post tags.
 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
