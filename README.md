@@ -3,7 +3,7 @@
 https://otrejo08.github.io/data_bootcamp_project3/website/index.html
 
 # Sydney and Melbourne-Airbnb-Analysis
-Melbourne Sydney Airbnb Analysis for Rice Univiersity Sata Analystics Bootcamp
+Melbourne and Sydney Airbnb Analysis for Rice University Data Analytics Bootcamp
 
 #Group Members:
 - [Molly Eskelson](https://github.com/veyEskelson)
