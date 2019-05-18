@@ -159,6 +159,13 @@
               <p>- wordcloud to generate wordclouds from the text of the reviews</p>
               <p>-from nltk.corpus import stopwords   # stopwords to detect language</p>
               <p>- nltk.downloader.download('vader_lexicon')</p>
+              <p>-from nltk import word_tokenize
+                <p>-from nltk.tokenize import RegexpTokenizer</p>
+                <p>from nltk.corpus import stopwords</p>
+                <p>from nltk.stem import WordNetLemmatizer</p>
+                <p>from gensim.corpora.dictionary import Dictionary</p>
+                <p>from gensim.models.tfidfmodel import TfidfModel</p>
+                <p>from gensim.models.ldamodel import LdaModel</p>
               
             </div>
           </div>
@@ -176,7 +183,15 @@
               <p><ul>Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processing the given text, if included, they will just increase the size of bag of words that we will create as last step and decrease the efficiency of algorithm.</ul>
                 <ul>Stemming: Take roots of the word</ul>
                 <ul>Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’)</ul>
-            </div>
+            <br>
+            <ul>Analysis Constraints</ul>
+                <li>1)	Time period between January 2010 to December 2015 was considered in the analysis timeline. </li>
+                <li>2)	Only English words with ASCII characters(33-165) were considered; resulting in approximately 10,000 records being removed from the data set. Decision was taken because of time constraints and lack of familiarity with appropriate libraries to process non-English languages . </li>
+                <li>3)	Records without a comment we're not kept in the data set .   </li>
+                <li>4)	Information not available regarding text character limits for input  into either descriptions by hosts, or comments by reviewers . </li>
+                <li> 5)	Demographic information was not available for either hosts or reviewers to make further analysis regarding authorship.  </li>
+             
+              </div>
           </div>
         </div>
         <div class="card">
@@ -197,8 +212,6 @@
                 <ul>Primative Text Analysis</ul>
                 <li>Description Vs Comment Analysis(Primitive Tokenization).ipynb</li>
                 <li>topic modeling.ipynb</li>
-                <li>word cloud.ipynb </li>
-
                 <ul>Processing</ul>
                 <li>Data Dimensioning.ipynb </li>
                 <li>Exploring.ipynb</li>
