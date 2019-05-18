@@ -136,6 +136,7 @@
               <p><ul>Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processing the given text, if included, they will just increase the size of bag of words that we will create as last step and decrease the efficiency of algorithm.</ul>
                 <ul>Stemming: Take roots of the word</ul>
                 <ul>Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’)</ul></p>
+             <ul>Now we can visualize the distributions of the sentiment indicators for both datasets. We don't expect major differences between Sydney and Melbourne</ul>
               </div>
          </div>
         </div>
@@ -156,6 +157,9 @@
               <p>- The code in this project is written in Python 3.6.6 :: Anaconda custom (64-bit). The following additional libraries have been used:</p>
               <p>- nltk for the Vader Sentiment Analyzer. The Vader lexicon has been downloaded nltk.downloader.download('vader_lexicon')</p>
               <p>- wordcloud to generate wordclouds from the text of the reviews</p>
+              <p>-from nltk.corpus import stopwords   # stopwords to detect language</p>
+              <p>- nltk.downloader.download('vader_lexicon')</p>
+              
             </div>
           </div>
         </div>
@@ -185,11 +189,31 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
             <div class="card-body">
-                <ul>
-                -The Jupyter notebooks included in this project are:
+                <ul>-The Jupyter notebooks included in this project are:
                 <li>sentiment_analysis.ipynb, with the code to analyze the text reviews </li>
                 <li>Review_ASCII_Negative.csv has Dataset has 6098 rows, 19 columns after cleaning it up.</li>
                 <li>Review_ASCII_Positive.csv has Dataset has 161278 rows, 19 columns after cleaning it up.</li>
+
+                <ul>Primative Text Analysis</ul>
+                <li>Description Vs Comment Analysis(Primitive Tokenization).ipynb</li>
+                <li>topic modeling.ipynb</li>
+                <li>word cloud.ipynb </li>
+
+                <ul>Processing</ul>
+                <li>Data Dimensioning.ipynb </li>
+                <li>Exploring.ipynb</li>
+                <li>scratchpad-Copy1.ipynb</li>
+                <li>FeatureAdditions.ipynb</li>
+                <li>Polarity Analysis.ipynb </li>
+                <li>Test.ipynb </li>
+                <li>dictionary.csv </li>
+                <li>dictionary.gensim</li>
+                <li>language_detect.ipynb</li>
+                <li>lda.model</li>
+                <li>lda.model.expElogbeta.npy</li>
+                <li>lda.model.id2word</li>
+                <li>lda.model.state</li>
+                
             </div>
           </div>
         </div>
@@ -205,6 +229,7 @@
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
           <div class="card-body">
             <li>POS tag filter is more about the context of the features than frequencies of features. Topic Modelling tries to map out the recurring patterns of terms into topics. However, every term might not be equally important contextually. For example, POS tag IN contain terms such as – “within”, “upon”, “except”. “CD” contains – “one”,”two”, “hundred” etc. “MD” contains “may”, “must” etc. These terms are the supporting words of a language and can be removed by studying their post tags. </li>
+          <li>A collocation is a sequence of words that co-occur more often that would be expected by chance. What we want to achieve now is to find collocations that have a high importance in the text and display them as main take aways of our reviews.</li>
           </div>
         </div>
       </div>
