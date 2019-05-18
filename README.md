@@ -43,10 +43,15 @@ The data has been made available by Airbnb inside, and the original source can b
 -	Stemming: Take roots of the word
 -	Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’).
 
+
+
+
+
 ## File Descriptions <a name="files"></a>
 The Jupyter notebooks included in this project are:
-- reviews_sentiment_analysis.ipynb, with the code to analyze the text reviews
-
+- sentiment_analysis.ipynb, with the code to analyze the text reviews
+- Review_ASCII_Negative.csv has Dataset has 6098 rows, 19 columns after cleaning it up.
+- Review_ASCII_Positive.csv has Dataset has 161278 rows, 19 columns after cleaning it up.
 
 ## Results<a name="results"></a>
 The following results are showed in the notebooks:
