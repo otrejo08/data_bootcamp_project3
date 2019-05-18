@@ -16,9 +16,10 @@ Melbourne Sydney Airbnb Analysis for Rice Univiersity Sata Analystics Bootcamp
 
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
-3. [File Descriptions](#files)
-4. [Results](#results)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+3. [Data](#data)
+4. [File Descriptions](#files)
+5. [Results](#results)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 ## Installation <a name="installation"></a>
 The code in this project is written in Python 3.6.6 :: Anaconda custom (64-bit).
@@ -34,7 +35,13 @@ The questions we are trying to answer in this project are the following:
 -
 - Can we find a way to classify negative and positive reviews based on text?
 
+
+## Data <a name="data"></a>
 The data has been made available by Airbnb inside, and the original source can be found [here](Add HTML)
+# Text Cleaning or Preprocessing
+-	Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processing the given text, if included, they will just increase the size of bag of words that we will create as last step and decrease the efficiency of algorithm.
+-	Stemming: Take roots of the word
+-	Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’).
 
 ## File Descriptions <a name="files"></a>
 The Jupyter notebooks included in this project are:
