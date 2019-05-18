@@ -83,25 +83,6 @@
     </div>
   </div>
 
-  <div class="section-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-8 col-md-offset-2">
-          <div class="text-center">
-            <h2>Summary</h2></p>
-            Using a dataset with AirBNB reviews from the Australian cities of Sydney and Melbourne, we pull out data for market research and look to a machine learning module to analyze reviews.</p>
-            <p><h3>Can we find a way to classify negative and positive reviews based on text?</h3></p>
-                Topic modeling is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation(LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions. LDA (short for Latent Dirichlet Allocation) is an unsupervised machine-learning model that takes documents as input and finds topics as output. The model also says in what percentage each document talks about each topic. A topic is represented as a weighted list of words. LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion. Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.</p>
-            <br></p>
-            <h3>Text Cleaning & Preprocessing </h3></p>
-            <p><ul>Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processing the given text, if included, they will just increase the size of bag of words that we will create as last step and decrease the efficiency of algorithm.</ul>
-              <ul>Stemming: Take roots of the word</ul>
-              <ul>Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’)</ul></p>
-          </div>
-       </div>
-      </div>
-    </div>
-  </div>
 
   <div class="section-container">
     <div class="container">
@@ -126,10 +107,7 @@
                             <i class="fa fa-chevron-right" aria-hidden="true"></i>
                             <span class="sr-only">Next</span>
                           </a>
-                          <a class="dropdown-item" href="visualizations.html">Map</a><br>
-                          <a class="dropdown-item" href="PricingStats.html">Pricing Statistics</a><br>
-                          <a class="dropdown-item" href="CityStats.html">City Statistics</a><br>
-                          <a class="dropdown-item" href="amenities.html">Amenities</a>
+                  
                           
                           <p>
                           </p>
@@ -148,11 +126,7 @@
                               <i class="fa fa-chevron-right" aria-hidden="true"></i>
                               <span class="sr-only">Next</span>
                             </a>
-                            <a class="dropdown-item" href="visualizations.html">Map</a><br>
-                            <a class="dropdown-item" href="PricingStats.html">Pricing Statistics</a><br>
-                            <a class="dropdown-item" href="CityStats.html">City Statistics</a><br>
-                            <a class="dropdown-item" href="amenities.html">Amenities</a>
-                          
+                       
                         
                         </div>
                     </div>
@@ -169,7 +143,29 @@
   </div>
 
   
-
+  <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-8 col-md-offset-2">
+            <div class="text-center">
+              <h2>Summary</h2></p>
+              Using a dataset with AirBNB reviews from the Australian cities of Sydney and Melbourne, we pull out data for market research and look to a machine learning module for textual analysis of the reviews.</p>
+            </p><h4>Once we have our typical analytics looking at locations, pricing trends and AirBNB user trends, we take a deeper dive to look into the <i>qualitative</i> aspect of the dataset: <b>consumer reviews.</b></h4>
+              <p><h3>The Idea? <br>Is it possible to classify negative and positive reviews based on text?</h3></p>
+                  Topic modeling is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation(LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions. LDA (short for Latent Dirichlet Allocation) is an unsupervised machine-learning model that takes documents as input and finds topics as output. The model also says in what percentage each document talks about each topic. A topic is represented as a weighted list of words. LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion. Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.</p>
+              <br></p>
+              <h3>Text Cleaning & Preprocessing </h3></p>
+              <p><ul>Remove Punctuations, Numbers: Punctuations, Numbers doesn’t help much in processing the given text, if included, they will just increase the size of bag of words that we will create as last step and decrease the efficiency of algorithm.</ul>
+                <ul>Stemming: Take roots of the word</ul>
+                <ul>Convert each word into its lower case: For example, it useless to have same words in different cases (eg ‘good’ and ‘GOOD’)</ul></p>
+            <p></p>
+            
+              </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  
   
        
 
