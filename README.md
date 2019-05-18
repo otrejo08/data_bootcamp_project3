@@ -15,7 +15,7 @@ Melbourne Sydney Airbnb Analysis for Rice Univiersity Sata Analystics Bootcamp
 ### Table of Contents
 
 1. [Installation](#installation)
-2. [Project Motivation](#motivation)
+2. [Project Topic](#topic)
 3. [Data](#data)
 4. [File Descriptions](#files)
 5. [Results](#results)
@@ -28,12 +28,19 @@ The following additional libraries have been used:
 
 - nltk for the Vader Sentiment Analyzer. The Vader lexicon has been downloaded nltk.downloader.download('vader_lexicon')
 
-## Project Motivation<a name="motivation"></a>
+## Project Topic<a name="topic"></a>
 In this project we analyze data from Airbnb listings for Sydney and Melbourne in 201# and 201#. 
 The questions we are trying to answer in this project are the following:
 -
 -
 - Can we find a way to classify negative and positive reviews based on text?
+
+Topic modeling is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation(LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.
+LDA (short for Latent Dirichlet Allocation) is an unsupervised machine-learning model that takes documents as input and finds topics as output. The model also says in what percentage each document talks about each topic.
+A topic is represented as a weighted list of words.
+LDA’s approach to topic modeling is it considers each document as a collection of topics in a certain proportion. And each topic as a collection of keywords, again, in a certain proportion.
+Once you provide the algorithm with the number of topics, all it does it to rearrange the topics distribution within the documents and keywords distribution within the topics to obtain a good composition of topic-keywords distribution.
+
 
 
 ## Data <a name="data"></a>
