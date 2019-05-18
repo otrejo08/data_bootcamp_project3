@@ -6,10 +6,11 @@ https://otrejo08.github.io/data_bootcamp_project3/website/index.html
 Melbourne Sydney Airbnb Analysis for Rice Univiersity Sata Analystics Bootcamp
 
 #Group Members:
-Molly Eskelson [here](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
-Raphael J Vasquez [here](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
-Kabrina Ramnath [here](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
-Omar Trejo [here](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
+-[Molly Eskelson](https://github.com/veyEskelson)
+-[Kabrina Ramnath](https://github.com/kabrinaramnath)
+-[Omar Trejo](https://github.com/otrejo08)
+-[Raphael J Vasquez](https://github.com/Duktig511)
+
 
 ### Table of Contents
 
