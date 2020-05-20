@@ -29,10 +29,8 @@ The following additional libraries have been used:
 - nltk for the Vader Sentiment Analyzer. The Vader lexicon has been downloaded nltk.downloader.download('vader_lexicon')
 
 ## Project Topic<a name="topic"></a>
-In this project we analyze data from Airbnb listings for Sydney and Melbourne in 201# and 201#. 
+In this project we analyze data from Airbnb listings for Sydney and Melbourne in 2012 and 2013. 
 The questions we are trying to answer in this project are the following:
--
--
 - Can we find a way to classify negative and positive reviews based on text?
 
 Topic modeling is a type of statistical modeling for discovering the abstract “topics” that occur in a collection of documents. Latent Dirichlet Allocation(LDA) is an example of topic model and is used to classify text in a document to a particular topic. It builds a topic per document model and words per topic model, modeled as Dirichlet distributions.
@@ -59,12 +57,6 @@ The Jupyter notebooks included in this project are:
 - sentiment_analysis.ipynb, with the code to analyze the text reviews
 - Review_ASCII_Negative.csv has Dataset has 6098 rows, 19 columns after cleaning it up.
 - Review_ASCII_Positive.csv has Dataset has 161278 rows, 19 columns after cleaning it up.
-
-## Results<a name="results"></a>
-The following results are showed in the notebooks:
-- 
--
--
 
 ## What could be improved<a name="limitations"></a>
 - POS tag filter is more about the context of the features than frequencies of features. Topic Modelling tries to map out the recurring patterns of terms into topics. However, every term might not be equally important contextually. For example, POS tag IN contain terms such as – “within”, “upon”, “except”. “CD” contains – “one”,”two”, “hundred” etc. “MD” contains “may”, “must” etc. These terms are the supporting words of a language and can be removed by studying their post tags.
